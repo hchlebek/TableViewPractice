@@ -44,6 +44,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Gmr-XQ-fCJ" kind="show" id="YMD-69-xn4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -61,6 +64,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QkK-Or-v3p">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="f8U-sw-YjU">
+                            <connections>
+                                <action selector="editButtonTapped:" destination="BYZ-38-t0r" id="OUB-Ir-7V4"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Y9T-ab-nA0">
                             <connections>
                                 <action selector="addButtonTapped:" destination="BYZ-38-t0r" id="Gqh-xd-4Cu"/>
@@ -74,6 +82,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1235" y="291"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="pFu-Lf-swL">
+            <objects>
+                <viewController id="Gmr-XQ-fCJ" customClass="DetailViewController" customModule="Table_View_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a1x-jn-Vrg"/>
+                        <viewControllerLayoutGuide type="bottom" id="iF4-rE-soe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="33e-cq-szy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Dm-Rb-ZMa">
+                                <rect key="frame" x="0.0" y="64" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="G2Y-b8-H7j"/>
+                                    <constraint firstAttribute="width" constant="240" id="JlI-8s-VnT"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Superhero name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pOF-LD-Evm">
+                                <rect key="frame" x="38" y="208" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alias" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dCH-5M-BuS">
+                                <rect key="frame" x="38" y="246" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Power" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esc-Vg-3mY">
+                                <rect key="frame" x="38" y="284" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D28-9i-a2L">
+                                <rect key="frame" x="103" y="338" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="Gmr-XQ-fCJ" eventType="touchUpInside" id="wRm-lJ-PXQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="esc-Vg-3mY" firstAttribute="centerX" secondItem="33e-cq-szy" secondAttribute="centerX" id="8za-RU-v8K"/>
+                            <constraint firstItem="dCH-5M-BuS" firstAttribute="centerX" secondItem="33e-cq-szy" secondAttribute="centerX" id="Rsv-7p-keI"/>
+                            <constraint firstItem="8Dm-Rb-ZMa" firstAttribute="centerX" secondItem="33e-cq-szy" secondAttribute="centerX" id="TrV-Cg-8Kd"/>
+                            <constraint firstItem="D28-9i-a2L" firstAttribute="centerX" secondItem="33e-cq-szy" secondAttribute="centerX" id="eI1-Ta-9nz"/>
+                            <constraint firstItem="pOF-LD-Evm" firstAttribute="centerX" secondItem="33e-cq-szy" secondAttribute="centerX" id="z0P-OZ-qEZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aliasTextfield" destination="dCH-5M-BuS" id="HCt-rD-aGS"/>
+                        <outlet property="myImageView" destination="8Dm-Rb-ZMa" id="umj-YW-RP2"/>
+                        <outlet property="nameTextfield" destination="pOF-LD-Evm" id="1ZZ-jX-xtJ"/>
+                        <outlet property="powerTextfield" destination="esc-Vg-3mY" id="gnp-LS-uY9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPf-nx-H3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lku-mU-lzG">

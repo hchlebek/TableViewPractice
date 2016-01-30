@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F798D7E1C4EA9BB0072FF8E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F798D7D1C4EA9BB0072FF8E /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3FD0C31C1C46B8F5004572D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0C31B1C46B8F5004572D3 /* AppDelegate.swift */; };
 		3FD0C31E1C46B8F5004572D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0C31D1C46B8F5004572D3 /* ViewController.swift */; };
 		3FD0C3211C46B8F5004572D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD0C31F1C46B8F5004572D3 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		3FD0C3261C46B8F5004572D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD0C3241C46B8F5004572D3 /* LaunchScreen.storyboard */; };
 		3FD0C3311C46B8F5004572D3 /* Table_View_PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0C3301C46B8F5004572D3 /* Table_View_PracticeTests.swift */; };
 		3FD0C33C1C46B8F5004572D3 /* Table_View_PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0C33B1C46B8F5004572D3 /* Table_View_PracticeUITests.swift */; };
+		3FEEB8161C49646D003ACC4D /* Superhero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEEB8151C49646D003ACC4D /* Superhero.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F798D7D1C4EA9BB0072FF8E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3FD0C3181C46B8F5004572D3 /* Table View Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table View Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD0C31B1C46B8F5004572D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD0C31D1C46B8F5004572D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		3FD0C3371C46B8F5004572D3 /* Table View PracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Table View PracticeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD0C33B1C46B8F5004572D3 /* Table_View_PracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_View_PracticeUITests.swift; sourceTree = "<group>"; };
 		3FD0C33D1C46B8F5004572D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEEB8151C49646D003ACC4D /* Superhero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Superhero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				3FD0C31B1C46B8F5004572D3 /* AppDelegate.swift */,
 				3FD0C31D1C46B8F5004572D3 /* ViewController.swift */,
+				3F798D7D1C4EA9BB0072FF8E /* DetailViewController.swift */,
+				3FEEB8151C49646D003ACC4D /* Superhero.swift */,
 				3FD0C31F1C46B8F5004572D3 /* Main.storyboard */,
 				3FD0C3221C46B8F5004572D3 /* Assets.xcassets */,
 				3FD0C3241C46B8F5004572D3 /* LaunchScreen.storyboard */,
@@ -257,6 +263,8 @@
 			files = (
 				3FD0C31E1C46B8F5004572D3 /* ViewController.swift in Sources */,
 				3FD0C31C1C46B8F5004572D3 /* AppDelegate.swift in Sources */,
+				3FEEB8161C49646D003ACC4D /* Superhero.swift in Sources */,
+				3F798D7E1C4EA9BB0072FF8E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +491,7 @@
 				3FD0C3421C46B8F5004572D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FD0C3431C46B8F5004572D3 /* Build configuration list for PBXNativeTarget "Table View PracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +500,7 @@
 				3FD0C3451C46B8F5004572D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FD0C3461C46B8F5004572D3 /* Build configuration list for PBXNativeTarget "Table View PracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +509,7 @@
 				3FD0C3481C46B8F5004572D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
